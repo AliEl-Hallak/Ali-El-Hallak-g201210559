@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="iletişim.css">
+ <title>g201210559</title>
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<div class="iletişim-sayfası">
     <div class="containar">
         <header>
             <nav>
                 <ul>
+                    <label for="" class="logo">Web project</label>
                     <li><a href="index.html" >Home</a> </li>
-                    <li><a href="#" >Hakkımda</a> </li>
-                    <li><a href="#">Özgeçmiş</a> </li>
-                    <li><a href="#">Şehrim</a></li>
-                    <li><a href="#">Mirasımız</a> </li>
+                    <li><a href="hakkımda.html" >Hakkımda</a> </li>
+                    <li><a href="cv.html">Özgeçmiş</a> </li>
+                    <li><a href="şehrim.html">Şehrim</a></li>
+                    <li><a href="mirasımız.html">Mirasımız</a> </li>
                     <li><a href="#">İlgi alanlarım</a> </li>
-                    <li><a href="iletişim.html" class="log">İletişim</a> </li>
-                    <li > <a href="proja.html" class="login" >Login</a> </li>
+                    <li><a href="iletişim.html" class="çizgi">İletişim</a> </li>
+                    <li > <a href="login.html" class="login" >Login</a> </li>
                 </ul>
            </nav>
         </header>
     </div>
-    <form action="#" method="POST">
+    <form action="iletişim.php" method="POST">
  
-        <h2>binimle iletişime geç</h2>
-        <h3 class="başlık">adı</h3>
-        <input class="ad" type="text" placeholder="adı" name="ad" required >
-        <input class="Soyad"type="text" placeholder=" Soyadı" name="Soyad" required >
+        <h2>bana mesaj yaz</h2>
+        <h3 class="başlık">ad</h3>
+        <input class="ad" type="text" placeholder="ad..." name="ad" required >
+        <input class="Soyad"type="text" placeholder=" Soyad..." name="Soyad" required >
      
-        <h3 class="başlık">email</h3>
-        <input class="emaill" type="email" placeholder="email" name="email" required >
+        <h3 class="başlık">Eposta</h3>
+        <input class="emaill" type="email" placeholder="Eposta..." name="email" required >
        
         <h3 class="başlık">telefon</h3>
-        <input class="ceptelefonu" type="text" placeholder="cep telefonu" name="cep telefonu" required >
+        <input class="ceptelefonu" type="text" placeholder="cep telefonu..." name="cep" required >
       
         <h3 class="başlık">mesaj</h3>
-        
-      <textarea class="mesajyaz" name="mesaj"  cols="30" rows="10" placeholder="mesaj yaz" ></textarea>
-
-
-
+      <textarea class="mesajyaz" name="mesaj"  cols="30" rows="10" placeholder="mesaj yaz..." ></textarea>
 
         <input type="submit" value="Gönder" required>
         <input type="reset" value="reset" required>
+        <aside>      
+           
+            <div id="simge">
+                <h3 class="başlık">iletişim</h3>
+            <a href="https://wa.me/+905314849283?text=ali" target="-blant"title="whatsapp"><img src="fotoğraflar/w.png" alt="">  </a>
+            <a href="https://www.facebook.com/ali.elhallak.77" target="-blant"title="facebook"><img src="fotoğraflar/f.png" alt="">  </a>
+            <a href="mailto:alielhallak@gmail.com" target="-blant"title="mail"><img src="fotoğraflar/g.png" alt="">  </a>
+            <a href="https://goo.gl/maps/DKE3PqjvJyVPWkR7A" title="konum" target="-blant"><img src="fotoğraflar/h.png" alt="">  </a>
+            </div>
+        </aside>
     </form>
+</div>
+  
 </body>
 </html>
