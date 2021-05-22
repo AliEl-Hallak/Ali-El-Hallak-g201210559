@@ -1,26 +1,33 @@
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
 </head>
-<body>
-    <div class="mirasımız-sayfası">
+<body class="mirasımız-sayfası">
+  
+   
         <div class="containar">
             <header>
                 <nav>
+                    <label class="togle">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    
                     <ul>
                         <label for="" class="logo">Web project</label>
-                        <li><a href="index.html" >Home</a> </li>
+                        <li><a href="index.html" >Ana Sayfa</a> </li>
                         <li><a href="hakkımda.html">Hakkımda</a> </li>
                         <li><a href="cv.html">Özgeçmiş</a> </li>
                         <li><a href="şehrim.html">Şehrim</a></li>
                         <li><a href="mirasımız.html"class="çizgi" >Mirasımız</a> </li>
-                        <li><a href="#">İlgi alanlarım</a> </li>
+                        <li><a href="ilgi-alanlarım.html">İlgi alanlarım</a> </li>
                         <li><a href="iletişim.html">İletişim</a> </li>
                         <li > <a href="login.html" class="login" >Login</a> </li>
                     </ul>
+                    <label for="" class="logo1">Web project</label>
             </nav>
             </header>
         </div>
@@ -51,7 +58,13 @@
                 </p>     
             </section>      
         </main>
-    </div>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(' .togle i').click(function(){
+                $('ul').toggleClass('show')
+            });
+        </script>
+    
 </body>
 </html>
 

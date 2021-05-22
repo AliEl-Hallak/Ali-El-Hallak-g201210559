@@ -1,78 +1,93 @@
 <html>
 <head>
-   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<div class="hakkımda-sayfası">
+<body class="hakkımda-sayfası">
+
     <div class="containar">
         <header>
             <nav>
+                <label class="togle">
+                    <i class="fa fa-bars"></i>
+                </label>
+              
                 <ul>
                     <label for="" class="logo">Web project</label>
-                    <li><a href="index.html" >Home</a> </li>
+                    <li><a href="index.html" >Ana Sayfa</a> </li>
                     <li><a href="hakkımda.html" class="çizgi">Hakkımda</a> </li>
                     <li><a href="cv.html">Özgeçmiş</a> </li>
                     <li><a href="şehrim.html">Şehrim</a></li>
                     <li><a href="mirasımız.html" >Mirasımız</a> </li>
-                    <li><a href="#">İlgi alanlarım</a> </li>
+                    <li><a href="ilgi-alanlarım.html">İlgi alanlarım</a> </li>
                     <li><a href="iletişim.html">İletişim</a> </li>
                     <li > <a href="login.html" class="login" >Login</a> </li>
                 </ul>
-           </nav>
+                <label for="" class="logo1">Web project</label>
+            </nav>
         </header>
     </div>
     <main>
+      <div class="üst">
         <div class="resim"> 
-            <img src="fotoğraflar/Image.jpg" alt="user">
+
+            <img class="img" src="fotoğraflar/me.jpg" alt="user">
+           
           </div> 
     
            <div class="üst-kısım"> 
-                <h3 id="üstsatır">bemim hakkımda neler biliyorsunuz ?</h3>
+                <h3 id="üstsatır">Bemim hakkımda neler biliyorsunuz ?</h3>
               <br>
               
                 <p>
-                    Benim adım Ali Suriyeliyim Türkiye’ye altı yıldan biri geldim. Şuan mersinde ailemle beraber yaşıyorum araştırmayı çok severim
+                    Benim adım Ali Suriyeliyim. Türkiye’ye altı yıldan beri geldim. Şuan mersinde ailemle beraber yaşıyorum. araştırmayı çok severim.
                    
                 </p>
             
             </div>  
-   
+        </div>
             <section>
               
-                <b>sevdiğim hobiler:</b>
+                <b>Sevdiğim hobiler:</b>
                 <ul >
-                    <li>evde spor yapmak</li>
-                    <li>bisiklet binmek</li>
-                    <li>balık tutmak</li>
+                    <li>Evde spor yapmak</li>
+                    <li>Bisiklete binmek</li>
+                    <li>Balık tutmak</li>
                 </ul>
 
 
             </section>
             <section>
-                <b>bildiğim Web diler:</b>
+                <b>Bildiğim Web diler:</b>
                 <ul>
-                    <li> html 60%</li>
-                    <li>css 60%</li>
-                    <li>php 10%</p>
+                    <li>Html 60%</li>
+                    <li>Css 60%</li>
+                    <li>Php 10%</p>
                     </li>
                 </ul>
 
             </section>
             <section>
-                <b>bildiğim diler:</b>
+                <b>Bildiğim diler:</b>
                 <ul>
-                    <li>arapça 100%</li>
-                    <li>türkçe 70%</li>
+                    <li>Arapça 100%</li>
+                    <li>Türkçe 70%</li>
                     <li>inglizce 60%</li>
                 </ul>
            
             </section>
               
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(' .togle i').click(function(){
+            $('ul').toggleClass('show')
+        });
+    </script>
 
-</div>
 </body>
 </html>
 
